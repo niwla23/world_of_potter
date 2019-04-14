@@ -1,3 +1,3 @@
 # A Harry Potter Modpack for Minetest
 
-Licensed under the MIT License
+Copyright © 2019 Binyamin Green. Licensed under the **MIT** license
