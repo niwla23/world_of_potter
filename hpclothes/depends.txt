@@ -2,3 +2,4 @@ default
 player_api
 wool
 sfinv
+unified_inventory?

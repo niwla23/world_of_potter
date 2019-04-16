@@ -29,12 +29,15 @@ minetest.register_craft({
 
 --Register Potions
 hppotions.register_potion('lightblue', 'Doxycide', nil)
-hppotions.register_potion('brown', 'Gillyweed Solution', nil)
+hppotions.register_potion('brown', 'Gillyweed Solution', {
+    
+})
 hppotions.register_potion('yellow', 'Pepperup Potion',
     function()
         minetest.do_item_eat(6, nil, itemstack, user, pt)
     end
 )
+
 hppotions.register_potion('purple', 'Polyjuice Potion', nil)
 hppotions.register_potion('darkgreen', 'Essence of Dittany',
     function(itemstack, user, pt)
@@ -95,10 +98,3 @@ minetest.register_node("hppotions:cabinet", {
         end   
 	end,
 })
-
---[[ 
-    if contents is recipe
-add item to dst
-    then, if player takes dst
-remove items from src
-]]
