@@ -3,3 +3,4 @@ player_api
 wool
 sfinv
 unified_inventory?
+3d_armor?

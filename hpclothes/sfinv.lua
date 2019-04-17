@@ -30,12 +30,12 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
     local node_name = player_inv:get_stack('outfit', 1):to_string()
 
     if player_inv:get_stack('outfit', 1):is_empty() then
-        return player_api.set_textures(player, {'character.png'})
+        return hpclothes.update_player_visuals(player)
     end
 
     if node_name:sub(1, string.len('hpclothes:')) == 'hpclothes:' then
         local img_name = node_name:gsub('hpclothes:','clothes_')..'.png'
-        player_api.set_textures(player, {'character.png^'..img_name})
+        hpclothes.update_player_visuals(player, img_name)
     end
 
     -- set formspec img
